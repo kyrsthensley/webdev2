@@ -1,0 +1,44 @@
+/* 
+font-family: 'Festive', cursive;
+font-family: 'Indie Flower', cursive;
+*/
+
+body {
+    width: 60rem;
+    margin: auto;
+    font-family: 'Indie Flower', cursive;
+    background-image: url(images/peace.jpg);
+}
+
+header {
+    height: 300px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+
+}
+
+
+img {width: 200px;}
+
+h1 {
+    font-family: 'Festive', cursive;
+    color: blue;
+    font-size: 3em;
+    margin: 0;
+    
+}
+
+
+h3 {
+    margin:auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+footer {
+    clear: both;
+    background-color: rgba(255, 255, 255, 0.8);
+}
