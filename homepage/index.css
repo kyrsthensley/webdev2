@@ -1,17 +1,14 @@
-/* 
-font-family: 'Festive', cursive;
-font-family: 'Indie Flower', cursive;
-*/
+/*https://kyrsthensley.github.io/webdev2/homepage/index.html*/
 
 body {
     width: 60rem;
     margin: auto;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-image: url(images/peace.jpg);
 }
 
 header {
-    height: 300px;
+   
     text-align: center;
     background-color: rgba(255, 255, 255, 0.8);
 
@@ -21,13 +18,26 @@ header {
 img {width: 200px;}
 
 h1 {
-    font-family: 'Festive', cursive;
-    color: blue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: seagreen;
     font-size: 3em;
     margin: 0;
     
 }
 
+#me {
+    display: flex;
+}
+p {
+    padding-left: 1em;
+}
+
+#know {
+    display: flex;
+}
+.love {
+    padding: 1em;
+}
 
 h3 {
     margin:auto;
