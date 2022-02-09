@@ -1,0 +1,74 @@
+body {
+    background-color: aliceblue;
+    
+
+}
+
+:root {
+    --tx-color: coral;
+    --font-headers: Arial;
+  }
+
+header{
+    background-color: bisque;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;   
+}
+
+h1{
+    color: var(--tx-color);
+    font-family: var(--font-headers);
+}
+
+#head {
+    margin: auto;
+    width: 800px;
+}
+
+main{
+    width: 800px;
+    margin: auto;
+}
+
+
+
+nav a {
+    padding-right: 1em;
+    
+}
+
+nav {
+    
+}
+h2 {
+    padding-top: 1em;
+
+}
+
+
+h4, h2 {
+    font-family: var(--font-headers);
+    color: darkcyan;
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 2em;
+    color: var(--tx-color);
+}
+
+footer{
+    text-align: center;
+    background-color: bisque;
+    padding: .5em;
+}
+
+
+@media (max-width: 600px) {
+    body, main, #head {
+      
+      width: 100%;
+      margin: 1em;
+    }
+
+  }
