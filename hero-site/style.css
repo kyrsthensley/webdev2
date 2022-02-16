@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body {
+    background-color: white;
+    
+
+}
+
+.pic {
+    width: 100%;
+}
+
+#fullimg {
+    background-image: url(images/pic1.jpg);
+    min-height: 100vh;
+    min-width: 100%;
+    font-family: var(--font-headers);
+}
+
+#text {
+    padding-top: 25rem;
+    padding-left: 10em;
+}
+.divy {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+:root {
+    --tx-color: black;
+    --font-headers: 'Permanent Marker', cursive;
+    --font-reg: arial;
+    --size-p: 2vmin;
+    --size-h1: 4.0vmin;
+    --size-other: 3.0vmin;
+  }
+
+header{
+    background-color: whitesmoke;
+    padding: 1.5em;   
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+nav{
+    text-align: right;
+    padding-top: 2em;
+}
+
+h1{
+    color: var(--tx-color);
+    font-family: var(--font-headers);
+    font-size: var(--size-h1);
+}
+
+
+
+main{
+    width: 800px;
+    margin: auto;
+}
+
+
+nav a {
+    padding-right: 1em;
+    font-family: var(--font-reg);
+    
+}
+
+
+h2 {
+    padding-top: 1em;
+
+}
+
+
+h4, h2 {
+    font-family: var(--font-reg);
+    color: black;
+    font-size: var(--size-other);
+}
+
+p{
+    font-family: var(--font-reg);
+    padding-bottom: 2em;
+    color: var(--tx-color);
+    font-size: var(--size-p);
+}
+
+footer{
+    text-align: center;
+    background-color: whitesmoke;
+    padding: .5em;
+}
+
+
+@media (max-width: 600px) {
+    body, main, #head .pic {
+      
+      width: 100%;
+      margin: 1em;
+    }
+
+  }
