@@ -47,6 +47,7 @@ header{
     width: 100vw;
     background-color: #e6e1d9; 
     color: black;
+    z-index: 900;
 }
 #head {
     display: flex;
@@ -206,6 +207,13 @@ h4 {
     max-width: 100%;
     max-height: 100%;
 }
+.bloby {
+    margin-top: -40em;
+    display: none;
+}
+.pro1:hover .bloby{
+    display: block; 
+}
 /*                                                                                                                                  Section 5*/
 .div5 {
     height: 200px;
@@ -262,7 +270,7 @@ h4 {
     height: 400px;
     border-bottom: 1px solid black;
 }
-/*                                                                                                                                  Section 10*/
+/*                                                                                                                                 Section 10*/
 .div10 {
     display: flex;
     border-bottom: 1px solid black;
@@ -275,7 +283,7 @@ h4 {
     height: 500px;
     width: 50%;
 }
-/*                                                                                                                                  Section 11*/
+/*                                                                                                                                 Section 11*/
 .div11 {
     height: 250px;
     border-bottom: 1px solid black;
