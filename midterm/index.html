@@ -18,23 +18,30 @@
         <div id="head">
             <div class="head1">
                     <nav>
-                        <ul>
-                            <li class="li1"><a href="#">SHOP &#xfe40;</a></li>
-                            <li class="li1"><a href="#">SUBSCRIBE</a></li>
-                            <li class="li1"><a href="#">ABOUT</a></li>
-                            <li class="li1"><a href="#">FUN STUFF &#xfe40;</a></li>
+                        <ul class="nav-menu">
+                            <li class="li1" class="nav-item"><a href="#">SHOP &#xfe40;</a></li>
+                            <li class="li1" class="nav-item"><a href="#">SUBSCRIBE</a></li>
+                            <li class="li1" class="nav-item"><a href="#">ABOUT</a></li>
+                            <li class="li1" class="nav-item"><a href="#">FUN STUFF &#xfe40;</a></li>
                         </ul>
+                        
+                        <div class="hamburger">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
                     </nav>
             </div>
             <div class="logo"><h1 class="desoi">De Soi</h1></div>
             <div class="head2">
                 <nav>
-                    <ul>
+                    <ul class="nav-menu">
                         <li class="li2"><a href="#"> <img src="images/flag.png" alt="flag"> US &#xfe40;</a></li>
                         <li class="li2"><a href="#">CONTACT</a></li>
                         <li class="li2"><a href="#">LOG IN</a></li>
                         <li class="li2"><a href="#"><img src="images/cart.png" alt="cart" class="cart"></a></li>
                     </ul>
+                    <a href="#"><img src="images/cart.png" alt="cart" class="mobilecart"></a>
                 </nav>
         </div>
     </header>
@@ -86,20 +93,16 @@
 
             <div class="div4">
                 <div class="pro1">
-                    <div>
+                    <div class="prop">
                        <img src="images/product.png" alt="product" class="productimg">
                         <h4>Can Variety Pack</h4>
                         <p class="bodycopy">A trio of our non-alcoholic aperitifs-Golden Hour, <br> Champignon Dreams, & Purple Lune</p>
                         <p class="shopnow"><a href="#">SHOP NOW</a></p>
                     </div>
-                    <div class="bloby">
-                        <span>
-                            <img src="images/blob1.svg" alt="">
-                        </span>
-                    </div>
+                   
                 </div>
                 <div class="pro2">
-                    <div>
+                    <div class="prop">
                         <img src="images/product.png" alt="product" class="productimg">
                         <h4>Can Variety Pack</h4>
                         <p class="bodycopy">A trio of our non-alcoholic aperitifs-Golden Hour, <br> Champignon Dreams, & Purple Lune</p>
@@ -107,7 +110,7 @@
                     </div>
                 </div>
                 <div class="pro3">
-                    <div>
+                    <div class="prop">
                         <img src="images/product.png" alt="product" class="productimg">
                         <h4>Can Variety Pack</h4>
                         <p class="bodycopy">A trio of our non-alcoholic aperitifs-Golden Hour, <br> Champignon Dreams, & Purple Lune</p>
@@ -115,7 +118,7 @@
                     </div>
                 </div>
                 <div class="pro4">
-                    <div>
+                    <div class="prop">
                         <img src="images/product.png" alt="product" class="productimg">
                         <h4>Can Variety Pack</h4>
                         <p class="bodycopy">A trio of our non-alcoholic aperitifs-Golden Hour, <br> Champignon Dreams, & Purple Lune</p>
@@ -270,7 +273,10 @@
                     <h2>Inbox gold.</h4>
                     <p>Sign up for sneak peeks, recipes, & more fun updates.</p>
                     <form action="https://formsubmit.co/kyrstinhensley@gmail.com" method="POST">
-                        <div class="input"><input type="text"  required placeholder="Email"></div>
+                        <div class="input"><input type="text"  required placeholder="Email">
+                            <button>&#8594;</button>
+                        </div>
+                        
                     </form>
                     <div class="sm">
                         <img src="images/facebook.png" alt="facebook" class="icons">
@@ -303,5 +309,6 @@
             </div>
         </div>
     </footer>
+
 </body>
 </html>
