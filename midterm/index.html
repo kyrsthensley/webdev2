@@ -19,10 +19,70 @@
             <div class="head1">
                     <nav>
                         <ul class="nav-menu">
-                            <li class="li1" class="nav-item"><a href="#">SHOP &#xfe40;</a></li>
-                            <li class="li1" class="nav-item"><a href="#">SUBSCRIBE</a></li>
-                            <li class="li1" class="nav-item"><a href="#">ABOUT</a></li>
-                            <li class="li1" class="nav-item"><a href="#">FUN STUFF &#xfe40;</a></li>
+                            <li class="li11" class="nav-item" >
+                                <div class="dropdown">
+                                    <button class="dropbtn">SHOP &#xfe40;
+                                      <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <div class="dropdown-contentshop">
+                                        <div class="divshop">
+                                            <div class="shop1">
+                                                <div class="shoppro">
+                                                   <img src="images/product.png" alt="product" class="shopproimg">
+                                                    <h4 class="shoph4">Golden Hour</h4>
+                                                    <p class="can">CAN</p>
+                                                </div>
+                                            </div>
+                                            <div class="shop2">
+                                                <div class="shoppro">
+                                                    <img src="images/product.png" alt="product" class="shopproimg">
+                                                    <h4 class="shoph4">Champignon Dreams</h4>
+                                                    <p class="can">BOTTLE &nbsp;&nbsp;|&nbsp;&nbsp; CAN</p>
+                                                </div>
+                                            </div>
+                                            <div class="shop3" >
+                                                <div class="shoppro">
+                                                    <img src="images/product.png" alt="product" class="shopproimg">
+                                                    <h4 class="shoph4">Purple Lune</h4>
+                                                    <p class="can">BOTTLE&nbsp;&nbsp; |&nbsp;&nbsp; CAN</p>
+                                                </div>
+                                            </div>
+                                            <div class="shop4">
+                                                <div class="shoppro">
+                                                    <img src="images/product.png" alt="product" class="shopproimg">
+                                                    <h4 class="shoph4">Variety Pack</h4>
+                                                    <p class="can">CAN</p>
+                                                </div>
+                                            </div>
+                                            <div class="shop5">
+                                                <div class="shoppro">
+                                                    <img src="images/product.png" alt="product" class="shopproimg">
+                                                    <h4 class="shoph4">Sets</h4>
+                                                    <p class="can">BOTTLE</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="buttonshopdiv">
+                                            <button class="buttonshop">SHOP ALL</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="li12" class="nav-item"><a href="#" class="underline">SUBSCRIBE</a></li>
+                            <li class="li13" class="nav-item"><a href="#" class="underline">ABOUT</a></li>
+                            <li class="li14" class="nav-item" class="dropdown">
+                                <div class="dropdown">
+                                    <button class="dropbtn">FUN STUFF &#xfe40;
+                                      <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <div class="dropdown-content">
+                                      <a href="#" class="underline">FIND YOUR DE SOI</a>
+                                      <a href="#" class="underline">RECIPES</a>
+                                      <a href="#" class="underline">BOTANICAL GLOSSARY</a>
+                                      <a href="#" class="underline">BLOG</a>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                         
                         <div class="hamburger">
@@ -31,15 +91,26 @@
                             <span class="bar"></span>
                         </div>
                     </nav>
+                    
             </div>
             <div class="logo"><h1 class="desoi">De Soi</h1></div>
             <div class="head2">
                 <nav>
                     <ul class="nav-menu">
-                        <li class="li2"><a href="#"> <img src="images/flag.png" alt="flag"> US &#xfe40;</a></li>
-                        <li class="li2"><a href="#">CONTACT</a></li>
-                        <li class="li2"><a href="#">LOG IN</a></li>
-                        <li class="li2"><a href="#"><img src="images/cart.png" alt="cart" class="cart"></a></li>
+                        <li class="li21">
+                            <a href="#"> <img src="images/flag.png" alt="flag"></a>
+                            <form method="post" action="/localization" id="locoform">
+                                <input type="hidden" name="form-type" value="localization">
+                                <input type="hidden" name="utf8" value="✓">
+                                <input type="hidden" name="method" value="/">
+                                <select name="country_code" >
+                                    <option value="US" selected="selected"> US </option>
+                                </select>
+                            </form>
+                        </li>
+                        <li class="li22"><a href="#" class="underline">CONTACT</a></li>
+                        <li class="li23"><a href="#" class="underline">LOG IN</a></li>
+                        <li class="li24"><a href="#" class="underline"><img src="images/cart.png" alt="cart" class="cart"></a></li>
                     </ul>
                     <a href="#"><img src="images/cart.png" alt="cart" class="mobilecart"></a>
                 </nav>
@@ -54,7 +125,7 @@
                     <div class="text1">
                         <p class="txt">INTRODUCING OUR SPARKLING NON-ALCOHOLIC APERITIFS</p>
                         <h1>For pleasure and restraint</h1>
-                        <p class="txt"> <a href="#">SHOP NOW</a> </p>
+                        <p class="btn" class="txt" > <a href="#">SHOP NOW</a> </p>
                     </div>
                     <img src="images/shape1.png" alt="product" class="img2">
                 </div>
@@ -91,47 +162,83 @@
                 <h1>Our Apéritifs</h1>
             </div>
 
+
             <div class="div4">
-                <div class="pro1">
-                    <div class="prop">
-                       <img src="images/product.png" alt="product" class="productimg">
-                        <h4>Can Variety Pack</h4>
-                        <p class="bodycopy">A trio of our non-alcoholic aperitifs-Golden Hour, <br> Champignon Dreams, & Purple Lune</p>
-                        <p class="shopnow"><a href="#">SHOP NOW</a></p>
-                    </div>
-                   
-                </div>
-                <div class="pro2">
-                    <div class="prop">
-                        <img src="images/product.png" alt="product" class="productimg">
-                        <h4>Can Variety Pack</h4>
-                        <p class="bodycopy">A trio of our non-alcoholic aperitifs-Golden Hour, <br> Champignon Dreams, & Purple Lune</p>
-                        <p class="shopnow"><a href="#">SHOP NOW</a></p>
-                    </div>
-                </div>
-                <div class="pro3">
-                    <div class="prop">
-                        <img src="images/product.png" alt="product" class="productimg">
-                        <h4>Can Variety Pack</h4>
-                        <p class="bodycopy">A trio of our non-alcoholic aperitifs-Golden Hour, <br> Champignon Dreams, & Purple Lune</p>
-                        <p class="shopnow"><a href="#">SHOP NOW</a></p>
-                    </div>
-                </div>
-                <div class="pro4">
-                    <div class="prop">
-                        <img src="images/product.png" alt="product" class="productimg">
-                        <h4>Can Variety Pack</h4>
-                        <p class="bodycopy">A trio of our non-alcoholic aperitifs-Golden Hour, <br> Champignon Dreams, & Purple Lune</p>
-                        <p class="shopnow"><a href="#">SHOP NOW</a></p>
-                    </div>
+                <div class="scrollwrapper">
+                    <div class="swiperwrapper">
+                        <div class="pro1">
+                            <div class="prop" role="group" aria-label="1/8">
+                            <img src="images/product.png" alt="product" class="productimg">
+                                <h4>Can Variety Pack</h4>
+                                <p class="bodycopy">A trio of our non-alcoholic aperitifs-Golden Hour, <br> Champignon Dreams, & Purple Lune</p>
+                                <p id="shopnow" class="btn"><a href="#">SHOP NOW</a></p>
+                            </div>
+                        </div>
+                        <div class="pro2">
+                            <div class="prop" role="group" aria-label="2/8">
+                                <img src="images/product.png" alt="product" class="productimg" >
+                                <h4>Can Variety Pack</h4>
+                                <p class="bodycopy">A trio of our non-alcoholic aperitifs-Golden Hour, <br> Champignon Dreams, & Purple Lune</p>
+                                <p class="btn" id="shopnow" ><a href="#">SHOP NOW</a></p>
+                            </div>
+                        </div>
+                        <div class="pro3" role="group" aria-label="3/8">
+                            <div class="prop">
+                                <img src="images/product.png" alt="product" class="productimg">
+                                <h4>Can Variety Pack</h4>
+                                <p class="bodycopy">A trio of our non-alcoholic aperitifs-Golden Hour, <br> Champignon Dreams, & Purple Lune</p>
+                                <p id="shopnow" class="btn"><a href="#">SHOP NOW</a></p>
+                            </div>
+                        </div>
+                        <div class="pro4" role="group" aria-label="4/8">
+                            <div class="prop">
+                                <img src="images/product.png" alt="product" class="productimg">
+                                <h4>Can Variety Pack</h4>
+                                <p class="bodycopy">A trio of our non-alcoholic aperitifs-Golden Hour, <br> Champignon Dreams, & Purple Lune</p>
+                                <p id="shopnow" class="btn"><a href="#">SHOP NOW</a></p>
+                            </div>
+                        </div>
+                        <div class="pro1" role="group" aria-label="5/8">
+                            <div class="prop">
+                            <img src="images/product.png" alt="product" class="productimg">
+                                <h4>Can Variety Pack</h4>
+                                <p class="bodycopy">A trio of our non-alcoholic aperitifs-Golden Hour, <br> Champignon Dreams, & Purple Lune</p>
+                                <p id="shopnow" class="btn"><a href="#">SHOP NOW</a></p>
+                            </div>
+                        </div>
+                        <div class="pro2" role="group" aria-label="6/8">
+                            <div class="prop">
+                                <img src="images/product.png" alt="product" class="productimg">
+                                <h4>Can Variety Pack</h4>
+                                <p class="bodycopy">A trio of our non-alcoholic aperitifs-Golden Hour, <br> Champignon Dreams, & Purple Lune</p>
+                                <p class="btn" id="shopnow" ><a href="#">SHOP NOW</a></p>
+                            </div>
+                        </div>
+                        <div class="pro3" role="group" aria-label="7/8">
+                            <div class="prop">
+                                <img src="images/product.png" alt="product" class="productimg">
+                                <h4>Can Variety Pack</h4>
+                                <p class="bodycopy">A trio of our non-alcoholic aperitifs-Golden Hour, <br> Champignon Dreams, & Purple Lune</p>
+                                <p id="shopnow" class="btn"><a href="#">SHOP NOW</a></p>
+                            </div>
+                        </div>
+                        <div class="pro4" role="group" aria-label="8/8">
+                            <div class="prop">
+                                <img src="images/product.png" alt="product" class="productimg">
+                                <h4>Can Variety Pack</h4>
+                                <p class="bodycopy">A trio of our non-alcoholic aperitifs-Golden Hour, <br> Champignon Dreams, & Purple Lune</p>
+                                <p id="shopnow" class="btn"><a href="#">SHOP NOW</a></p>
+                            </div>
+                        </div>
+                    </div>    
                 </div>
             </div>
 
             <div class="div5">
-                <div>
+                <div class="div5sub">
                     <p>SUBSCRIBE FOR A SPRITZ SENT STRAIGHT TO YOUR DOOR.</p>
                     <h1>Keep it Coming</h1>
-                    <p> <a href="#">SUBCRIBE AND SAVE 15% OFF EVERY ORDER</a> </p>
+                    <p class="btn2"> <a href="#">SUBCRIBE AND SAVE 15% OFF EVERY ORDER</a> </p>
                 </div>
             </div>
 
@@ -140,7 +247,7 @@
                     <p>BEHIND THE BOTTLE</p>
                     <h1>What's a non-alcoholic apéritif?</h1>
                     <p>Popularized in France, the apéritif is a bittersweet botanical beverage meant for sipping slowly pre-dinner. Our apéritifs are entirely non-alcoholic, so instead of booze, we use natural adaptogens like reishi mushroom and ashwagandha to give you the stress-soothing effect you look for in a complex drink.</p>
-                    <p> <a href="#">LEARN MORE</a></p>
+                    <p class="btn"> <a href="#">LEARN MORE</a></p>
                 </div>
                 <div class="side2">
                     <img src="images/shape3.png" alt="hand pouring drink">
@@ -159,7 +266,7 @@
             <div class="div81">
                 <h1>Natural Botanicals</h1>
                 <p>Our apéritifs are brimming with the kind of culinary botanicals you’d find on the menu at your favorite local restaurant, from yuzu and lemongrass to dates and rosemary. The secret’s in our adaptogens, mind-mellowing botanicals that put the fun in functional, helping you create, relax, and ease into the night.</p>
-                <p><a href="#">BOTANICAL GLOSSARY</a></p>
+                <p class="btn"><a href="#">BOTANICAL GLOSSARY</a></p>
             </div>
             <div class="div8">
                 <div class="ing1">
@@ -192,7 +299,7 @@
                 <div class="div91">
                     <p>/DE SWA/</p>
                     <h1>"Inspired by the French ethos of pleasure and restraint, De Soi makes sparkling non-alcoholic apéritifs with natural adaptogens."</h1>
-                    <p><a href="#">LEARN MORE</a></p>
+                    <p class="btn2"><a href="#">LEARN MORE</a></p>
                 </div>
             </div>
 
@@ -204,7 +311,7 @@
                     <p>RECIPES</p>
                     <h1>Pour one out</h1>
                     <p>Our sparkling non-alcoholic aperitifs come pre-spritzed and ready to sip. Doll them up for the party with citrus and herbs, using our Recipes as your guide.</p>
-                    <p> <a href="#">EXPLORE NOW</a></p>
+                    <p class="btn"> <a href="#">EXPLORE NOW</a></p>
                 </div>
             </div>
 
@@ -212,7 +319,7 @@
                 <div class="div111">
                     <p>TAKE $5 OFF YOUR PURCHASE</p>
                     <h1>Refer a Friend</h1>
-                    <p><a href="#">REFER NOW</a></p>
+                    <p class="btn2"><a href="#">REFER NOW</a></p>
                 </div>
             </div>
 
@@ -221,7 +328,7 @@
                     <p>FILL UP YOUR OWN CUP.</p>
                     <h1>How You De Soi</h1>
                     <p>Which of our flavors feels like you? Take our quiz and find out!</p>
-                    <p> <a href="#">FIND YOUR DE SOI</a></p>
+                    <p class="btn"> <a href="#">FIND YOUR DE SOI</a></p>
                 </div>
                 <div class="find2">
                     <img src="images/sq2.jpg" alt="">
@@ -230,35 +337,76 @@
 
             <div class="div13">
                 <h1>Join Us <a href="@drinkdesoi">@drinkdesoi</a></h1>
+            
             </div>
 
             <div class="div14">
                 <div class="photoline1">
                     <div class="smimgdiv">
                         <img src="images/sq1.jpg" alt="" class="smimg">
+                        <a href="#">
+                            <div class="overlay">
+                                <p>Learn More</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="smimgdiv">
                         <img src="images/sq2.jpg" alt="" class="smimg">
+                        <a href="#">
+                            <div class="overlay">
+                                <p>Learn More</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="smimgdiv">
                         <img src="images/sq3.jpg" alt="" class="smimg">
+                        <a href="#">
+                            <div class="overlay">
+                                <p>Learn More</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="smimgdiv">
                         <img src="images/sq4.jpg" alt="" class="smimg">
+                        <a href="#">
+                            <div class="overlay">
+                                <p>Learn More</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="photoline2">
                     <div class="smimgdiv">
                         <img src="images/sq4.jpg" alt="" class="smimg">
+                        <a href="#">
+                            <div class="overlay">
+                                <p>Learn More</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="smimgdiv">
                         <img src="images/sq3.jpg" alt="" class="smimg">
+                        <a href="#">
+                            <div class="overlay">
+                                <p>Learn More</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="smimgdiv">
                         <img src="images/sq2.jpg" alt="" class="smimg">
+                        <a href="#">
+                            <div class="overlay">
+                                <p>Learn More</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="smimgdiv">
                         <img src="images/sq1.jpg" alt="" class="smimg">
+                        <a href="#">
+                            <div class="overlay">
+                                <p>Learn More</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
