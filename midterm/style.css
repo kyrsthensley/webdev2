@@ -64,7 +64,11 @@ header{
 h1 {
     margin: 0;
 }
-
+.h1title {
+    .h1title {
+        font-size: 6vmin;
+    }
+}
 #locoform {
     display: inline-block;
 }
@@ -209,7 +213,7 @@ a{
 .can {
     font-family: var(--font-reg);
     font-weight: 600;
-    font-size: .75rem;
+    font-size: .8rem;
     text-align: center;
 }
 .can:hover {
@@ -247,7 +251,7 @@ a{
     color: #eae5dd;
     font-family: var(--font-reg);
     font-weight: 600;
-    font-size: .75rem;
+    font-size: .8rem;
     text-align: center;
     min-width: 17rem;
     max-width: 57.6rem;
@@ -317,14 +321,14 @@ a{
 }
 .txt {
     font-family: var(--font-reg);
-    font-size: 2vmin;
+    font-size: .8rem;
     font-weight: 600;
 }
 h1 {
     font-family: var(--font-header);
     font-weight: 400;
     font-style: italic;
-    font-size: 6vmin;
+    font-size: 4.5rem;
     text-align: center;
 }
 /*                                                                                                                                  Section 2*/
@@ -352,9 +356,8 @@ h1 {
 }
 h3 {
     font-family: var(--font-header);
-    font-size: 5vmin;
-    color: brown;
-    margin: 0;
+    font-size: 3rem;
+    color: black;
 }
 /*                                                                                                                                  Section 3*/
 .div3 {
@@ -365,6 +368,12 @@ h3 {
 .div4 {
     display: flex;
     border-bottom: 1px solid black;
+}
+.slide1 {
+    display: flex;
+}
+.slide2 {
+    display: flex;
 }
 .prop {
     padding: 3vmin;
@@ -388,18 +397,53 @@ h3 {
     text-align: center;
     width:25%;
 }
+.slider {
+    width: 100%;
+    height: 680px;
+    position: relative;
+    overflow: hidden; /* <===  */
+  }
+  
+  .slide {
+    width: 100%;
+    position: absolute;
+    transition: all 0.5s;
+  }
+  .bttn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    z-index: 10px;
+    cursor: pointer;
+    color: #000;
+    font-size: 1.125rem;
+  }
+  .bttn:active {
+    transform: scale(1.1);
+  }
+  .bttn-prev {
+    top: 45%;
+    left: 2%;
+  }
+  
+  .bttn-next {
+    top: 45%;
+    right: 2%;
+  }
 .bodycopy {
     font-family: var(--font-reg);
-    font-size: 1.5vmin;
+    font-size: .8rem;
 }
 #shopnow {
     font-family: var(--font-reg);
     font-weight: 600;
-    font-size: 1.5vmin;
+    font-size: .8rem;
 }
 h4 {
     font-family: var(--font-header);
-    font-size: 3vmin;
+    font-size: 1.5rem;
 }
 .productimg {
     max-width: 100%;
@@ -442,7 +486,7 @@ h4 {
     margin: 0;
 }
 .div5sub {
-    padding: 3em;
+    padding: 12rem;
 }
 
 .div5 p a {
@@ -452,10 +496,12 @@ h4 {
 .div6 {
     display: flex;
     border-bottom: 1px solid black;
+    padding: 2.5rem 5rem 2.5rem 5rem;
 }
 .side1 {
     width: 50%;
-    padding: 12vmin 1vmin 0vmin 5vmin;
+    padding-top: 10vmin;
+    padding-right: 2rem;
 }
 .side2 {
     width: 50%;
@@ -464,7 +510,6 @@ h4 {
     width: 100%;
 }
 .side1 h1 {
-    font-size: auto;
     text-align: left;
     padding-left:0;
 }
@@ -472,6 +517,7 @@ h4 {
 .div7 {
     display: flex;
     border-bottom: 1px solid black;
+    padding: 2.5rem;
 }
 .div71 {
     width: 50%;
@@ -484,19 +530,19 @@ h4 {
     width: 100%;
 }
 .div7 h1 {
-    font-size: auto;
     text-align: left;
     padding-left:0;
 }
 /*                                                                                                                                  Section 8*/
 .div81 {
     text-align: center;
-    padding: 5vmin 20vmin 5vmin 20vmin;
+    padding: 5rem 5rem 3rem 5rem;
+    margin: 0vw 25vw 0vw 25vw;
 }
 .div8 {
     border-bottom: 1px solid black;
     text-align: center;
-    padding-bottom: 5vmin;
+    padding-bottom: 5rem;
 }
 .ing1 {
     width: 7%;
@@ -534,10 +580,10 @@ h4 {
     background-repeat: no-repeat;
     border-bottom: 1px solid black;
     color: white;
+    padding: 7.5rem;
 }
 .div91 {
     text-align: center;
-    padding: 5vmin 10vmin 5vmin 10vmin;
 }
 .div91 p {
     margin-top: 0;
@@ -546,12 +592,14 @@ h4 {
     color: white;
 }
 .div91 h1 {
-    font-size: 4.5vmin;
+    font-size: 3.5rem;
 }
+
 /*                                                                                                                                 Section 10*/
 .div10 {
     display: flex;
     border-bottom: 1px solid black;
+    padding: 2.5rem;
 }
 .rec1 {
     width: 50%;
@@ -575,7 +623,7 @@ h4 {
 }
 .div111 {
     text-align: center;
-    padding: 5vmin 10vmin 5vmin 10vmin;
+    padding: 7.5rem;
 }
 .div111 p {
     margin-top: 0;
@@ -587,6 +635,7 @@ h4 {
 .div12 {
     display: flex;
     border-bottom: 1px solid black;
+    padding: 4rem;
 }
 .find1 {
     width: 50%;
@@ -691,7 +740,7 @@ h4 {
 
 .overlay p {
     color: white;
-    font-size: 20px;
+    font-size: 1.25rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -728,6 +777,7 @@ h4 {
 footer{
     background-color: black;
     color: white;
+    padding: 3.5em 7.5em 0em 7.5em;
 }
 .info {
     display: flex;
@@ -749,40 +799,49 @@ footer{
     height: 300px;
 }
 .privacy {
-    height: 100px;
+    height: 40px;
 }
 
 input {
-    padding: 1vmin 5vmin 1vmin 1vmin;
-    width: 15vw;
-    height: 50px;
+    padding: 0vmin 5vmin 0vmin 5vmin;
+    width: 16em;
+    height: 5em;
     font-family: var(--font-reg);
     color: white;
-    background-color: black;
-    font-size: 2vmin;
+    background-color: transparent;
+    font-size: 1rem;
     border-color: transparent;
 }
 .input {
     border: 1px solid white;
-    width: 40vmin;
+    width: 28em;
+    height: 5.6em;
 }
 
 button {
     color: white;
     background: transparent; 
-    font-size: 3vmin;
+    font-size: .8rem;
     border-color: transparent;
 }
 
-footer {
-    padding: 5vmin 8vmin 1.5vmin;
+.footerul {
+    color:#FFF;
+    display: block;
+    font-family: var(--font-reg);
+}
+.footerli {
+    padding-bottom: .5em;
+}
+.footerli a {
+    color: white;
 }
 .sm {
     display: flex;
-    padding-top: 1vmin;
+    padding-top: 2rem;
 }
 .icons {
-    width: 2vw;
+    width: 2rem;
 }
 
 
@@ -816,15 +875,141 @@ footer {
             padding-top: 15vmin;
             padding-left: 0vmin;
         }
-
+        h3 {
+            font-size: 2rem;
+        }
+        h1 {
+            font-size: 3.25rem;
+        }
+        .h1title {
+            font-size: 5vmin;
+        }
+        .pro3 {
+            display: none;
+        }
+        .pro4 {
+            display: none;
+        }
+        .pro1 {
+            width: 50%;
+        }
+        .pro2 {
+            width: 50%;
+            border-right:none;
+        }
+        .div5sub {
+            padding: 4.8rem 1.6rem;
+        }
+        .div6 {
+            display: flex;
+            flex-direction: column;
+            padding: 2.5rem 1rem 2.5rem 1rem;
+        }
+        .side1 {
+            width: 100%;
+            text-align: center;
+            padding: 0rem;
+            order: 2;
+        }
+        .side1 h1 {
+            text-align: center;
+        }
+        .side2 {
+            order: 1;
+            width: 100%;
+        }
+        .div7 {
+            display: block;
+            padding: 2.5rem 1.5rem 2.5rem 1.5rem;
+        }
+        .div71 {
+            width: 100%;
+        }
+        .div72 {
+            width: 100%;
+            padding: 1vmin;
+            text-align: center;
+        }
+        .div72 h1 {
+            text-align: center;
+        }
+        .div81 {
+            margin: 0;
+        }
+        .div91 h1 {
+            font-size: 2.5rem;
+        }
         .div5 p {
             padding: 1vmin;
         }
-    
-        .side1 {
-            padding: 2vmin 1vmin 2vmin 5vmin;
+        .div8 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
         }
-
+        .ing1 {
+            padding-left: 17vmin;
+            width: 33.333%;
+        }
+        .ing2 {
+            width: 33.333%;
+            padding-left: 5rem;
+        }
+        .ing3 {
+            padding-right: 17vmin;
+            width: 33.333%;
+        }
+        .ing4 {
+            width: 33.333%;
+            padding-left: 17vmin;
+        }
+        .ing5 {
+            width: 33.333%;
+            padding-left: 5rem;
+        }
+        .ing6 {
+            width: 33.333%;
+        }
+        .div9 {
+            background-size: cover;
+            padding: 3rem 1rem 3rem 1rem;
+        }
+        .div10 {
+            display: block;
+            padding: 2.5rem 1rem 2.5rem 1rem;
+        }
+        .rec1 {
+            width: 100%;
+        }
+        .rec2 {
+            width: 100%;
+            text-align: center;
+            padding: 0;
+        }
+        .rec2 h1 {
+            text-align: center; 
+        }
+        .div111 {
+            padding: 3rem 1rem 3rem 1rem;
+        }
+        .div12 {
+            display: flex;
+            flex-direction: column;
+            padding: 4rem 1rem 4rem 1rem;
+        }
+        .find1 h1 {
+            text-align: center;
+        }
+        .find1 {
+            width: 100%;
+            padding: 0;
+            text-align: center;
+            order: 2;
+        }
+        .find2 {
+            width: 100%;
+            order: 1;
+        }
         .info {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -850,29 +1035,32 @@ footer {
         .privacy {
             margin-top: -5em;
         }
-        .icons {
-            width: 8vw;
-        }
         .input {
             width: 100%;
            height: auto;
             
         }
         input {
-            padding: 2vmin 5vmin 2vmin 4vmin;
-            width: 50vw;
+            padding: 0vmin 5vmin 0vmin 3vmin;
+            width: 13em;
+            height: 5em;
             font-family: var(--font-reg);
             color: white;
-            background-color: black;
-            font-size: 5vmin;
+            background-color: transparent;
+            font-size: 1rem;
             border-color: transparent;
-            height: 50px;
+        }
+        .input {
+            border: 1px solid white;
+            width: 21em;
+            height: 5.6em;
         }
         button {
-            font-size: 9vmin;
+            font-size: .8rem;
         }
-        .sm {
-            padding-top: 6vmin;
+
+        footer {
+            padding: 2.5em 4em 0em 4em;
         }
 
 
@@ -882,11 +1070,12 @@ footer {
         .nav-menu {
             position: fixed;
             left: -100%;
-            top: 5rem;
+            top: 2.5rem;
             flex-direction: column;
             width: 100%;
             text-align: center;
             transition: 0.3s;
+            background-color: #e6e1d9;
         }
 
         .nav-menu.active {
@@ -912,11 +1101,9 @@ footer {
             font-size: 2.7em;
         }
         .li1 {
-            font-size:4.5vmin;
             padding-bottom: .5em;
           }
           .li2 {
-            font-size:4.5vmin;
              padding-bottom: .5em;
           }
 
@@ -930,6 +1117,18 @@ footer {
       body {
           margin: auto;
       }
+      h3 {
+        font-size: 1.75rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    .div91 h1 {
+        font-size: 2rem;
+    }
+    h4 {
+        font-size: 1.25rem;
+    }
     /* section 1*/
         .div1 {
             display:block;
@@ -953,20 +1152,12 @@ footer {
             position:relative;
             padding-left: 0vmin;
         }
-        .text1 h1 {
-            font-size: 10vmin;
-        }
-        .txt {
-            font-size: 4vmin;
-        }
-
         .q2{
             display: none;
         }
         .q3 {
             display: none;
         }
-
         .q1 {
             display: block;
             text-align: center;
@@ -977,34 +1168,8 @@ footer {
             display: block;
             text-align: center;
         }
-        h3 {
-            font-size: 13vmin;
-        }
         .logoq {
             width: 15vw;
-        }
-
-        .pro3 {
-            display: none;
-        }
-        .pro4 {
-            display: none;
-        }
-        .pro1 {
-            width: 50%;
-        }
-        .pro2 {
-            width: 50%;
-            border-right:none;
-        }
-        h4 {
-            font-size: 6vmin;
-        }
-        .bodycopy {
-            font-size: 3.5vmin;
-        }
-        .shopnow {
-            font-size: 3.5vmin;
         }
         .div5 p {
             padding: 7vmin;
@@ -1012,42 +1177,8 @@ footer {
         .div5 {
             background-size: cover;
         }
-
-        .div6 {
-            display: flex;
-            flex-direction: column;
-        }
-        .side1 {
-            width: 100%;
-            padding: 1vmin;
-            text-align: center;
-            order: 2;
-        }
-        .side1 h1 {
-            text-align: center;
-        }
-        .side2 {
-            order: 1;
-            width: 100%;
-        }
-
-        .div7 {
-            display: block;
-        }
-        .div71 {
-            width: 100%;
-        }
-        .div72 {
-            width: 100%;
-            padding: 1vmin;
-            text-align: center;
-        }
-        .div72 h1 {
-            text-align: center;
-        }
-
         .div81 {
-            padding: 8vmin;
+            padding: 2.5rem;
         }
         .div8 {
             display: grid;
@@ -1055,79 +1186,32 @@ footer {
             gap: 10px;
         }
         .ing1 {
-            padding-left: 17vmin;
+            padding: 1rem 1rem 1rem 3rem;
             width: 50%;
         }
         .ing2 {
             width: 50%;
+            padding: 1rem 1rem 1rem 2rem ;
         }
         .ing3 {
-            padding-left: 17vmin;
+            padding: 1rem 1rem 1rem 3rem;
             width: 50%;
         }
         .ing4 {
             width: 50%;
+            padding: 1rem 1rem 1rem 2rem ;
         }
         .ing5 {
-            padding-left: 17vmin;
+            padding: 1rem 1rem 1rem 3rem ;
             width: 50%;
         }
         .ing6 {
+            padding: 1rem 1rem 1rem 2rem ;
             width: 50%;
-        }
-
-        .div91 h1 {
-            font-size: 8.5vmin;
-        }
-        .div9 {
-            background-size: cover;
-        }
-
-        .div10 {
-            display: block;
-        }
-        .rec1 {
-            width: 100%;
-        }
-        .rec2 {
-            width: 100%;
-            text-align: center;
-            padding: 0;
-        }
-        .rec2 h1 {
-            text-align: center;
-            
-        }
-
-        .div111 {
-            padding: 30vmin 10vmin 30vmin 10vmin;
         }
         .div11 {
             background-size: cover;
         }
-
-        .div12 {
-            display: flex;
-            flex-direction: column;
-        }
-        .find1 h1 {
-            text-align: center;
-        }
-        .find1 {
-            width: 100%;
-            padding: 0;
-            text-align: center;
-            order: 2;
-        }
-        .find2 {
-            width: 100%;
-            order: 1;
-        }
-
-        .div13 h1 {
-            font-size: 10vmin;
-        }
-
         .info {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -1153,29 +1237,25 @@ footer {
         .privacy {
             margin-top: -5em;
         }
-        .icons {
-            width: 8vw;
+        input {
+            padding: 0vmin 5vmin 0vmin 5vmin;
+            width: 14em;
+            height: 5em;
+            font-family: var(--font-reg);
+            color: white;
+            background-color: transparent;
+            font-size: 1rem;
+            border-color: transparent;
         }
         .input {
             width: 100%;
-            height: auto;
-            
-        }
-        input {
-            padding: 2vmin 5vmin 2vmin 4vmin;
-            width: 50vw;
-            font-family: var(--font-reg);
-            color: white;
-            background-color: black;
-            font-size: 5vmin;
-            border-color: transparent;
-            height: 50px;
+            height: 5.6em;  
         }
         button {
-            font-size: 9vmin;
+            font-size: .8rem;
         }
-        .sm {
-            padding-top: 6vmin;
+        footer {
+            padding: 1em;
         }
 
         
