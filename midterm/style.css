@@ -132,7 +132,7 @@ ul {
 }
 a{
     text-decoration: none;
-    color: black;
+    color: #f25a5a;
 }
 .logo {
     text-align: center;
@@ -446,7 +446,7 @@ h4 {
     font-size: 1.5rem;
 }
 .productimg {
-    max-width: 100%;
+    max-width: 45%;
     max-height: 100%;
 }
 .pro1:hover{
