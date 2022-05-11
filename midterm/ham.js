@@ -9,7 +9,7 @@
             navMenu.classList.toggle("active");
         }
 
-
+ 
 
 
         /*    Product slider, div4*/ 
