@@ -578,11 +578,16 @@ button {
     align-items: center;
 }
 .product-img {
-  
+    margin-left: 40vmin;
+}
+.product-img img {
+    max-width: 8em;
+    padding-right: 3em;
 }
 .product-description {
-    
+    margin-right: 40vmin;
 }
+
 .product-description h2 {
     color: #f25a5a;
 }
@@ -825,6 +830,20 @@ h5 {
             padding: 2.5em 4em 0em 4em;
         }
        
+        .product-container {
+            display: block;
+            justify-content: center;
+            align-items: center;
+        }
+        .product-img {
+            margin-left: 1em;
+        }
+        .product-img img {
+        }
+        .product-description {
+            margin-right: 1em;
+            text-align: center;
+        }
 
 
 
